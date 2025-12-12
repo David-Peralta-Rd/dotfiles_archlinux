@@ -19,3 +19,8 @@ ssh -T git@github.com # Verify connection.
 echo "Activar servicio de Docker"
 sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
+
+
+# Manual configuracion.
+sudo nano ~/.config/kitty/hyde.conf
+sudo nano ~/.config/hypr/hypridle.conf
