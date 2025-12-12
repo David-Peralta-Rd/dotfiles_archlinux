@@ -12,7 +12,7 @@ ssh-add ~/.ssh/id_ed25519 # Same as before.
 
 # Conexion con ssh github
 cat ~/.ssh/id_ed25519.pub # Copy key and paste into GitHub
-zen-browser https://github.com/settings/ssh/new # Paste key into this link.
+firefox https://github.com/settings/ssh/new # Paste key into this link.
 ssh -T git@github.com # Verify connection.
 
 
