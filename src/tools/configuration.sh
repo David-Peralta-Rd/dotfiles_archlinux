@@ -24,3 +24,4 @@ sudo usermod -aG docker $USER
 # Manual configuracion.
 sudo nano ~/.config/kitty/hyde.conf
 sudo nano ~/.config/hypr/hypridle.conf
+sudo nano ~/.local/share/hypr/startup.conf
