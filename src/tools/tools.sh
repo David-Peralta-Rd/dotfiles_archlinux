@@ -13,7 +13,6 @@ PACKAGE=(
     visual-studio-code-bin
 
     # Herramientas de uso comun.
-    zeb-browser
     swappy
     mpv
     wf-recorder
@@ -33,6 +32,9 @@ echo '
 # Velocidad de teclado.
 exec-once = xset r rate 240 50
 
+# Monitor
+monitor = DP-1, 1920x1080@70, 0x0, 1
+
 # Atajos de teclado
 bind = Super+Shift, BackSpace, exec, shutdown now                           # Apagar computador.
 bind = Super+Shift+Alt, BackSpace, exec, reboot                             # Reiniciar computador.
@@ -44,7 +46,6 @@ echo '
 alias c="clear"
 alias t="touch"
 alias mk="mkdir -p"
-alias un="sudo pacman -Rsc --noconfirm"
 alias in="yay -Sy --noconfirm"
 alias po="yay -Scc"
 
