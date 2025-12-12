@@ -16,6 +16,7 @@ PACKAGE=(
     swappy
     mpv
     wf-recorder
+    firefox
 
 )
 
@@ -29,16 +30,21 @@ echo '
     kb_options = escape
 }
 
-# Velocidad de teclado.
-exec-once = xset r rate 240 50
-
 # Monitor
 monitor = DP-1, 1920x1080@70, 0x0, 1
+
+# Ejecutar varias variantes.
+exec = ~/.local/lib/hyde/gamemode.sh
+exec-once = ~/.local/lib/hyde/systemupdate.sh
+
+
+# Velocidad de teclado.
+exec-once = xset r rate 240 50
 
 # Atajos de teclado
 bind = Super+Shift, BackSpace, exec, shutdown now                           # Apagar computador.
 bind = Super+Shift+Alt, BackSpace, exec, reboot                             # Reiniciar computador.
-bind = Super, U, exec, kitty yay --noconfirm -Syyu                          # Actualizar pc sin confirmar.
+bind = Super, U, exec, ~/.local/lib/hyde/systemupdate.sh up                 # Actualizar pc sin confirmar.
 ' | sudo tee -a ~/.config/hypr/custom/general.conf
 
 echo '
